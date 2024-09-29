@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world/components/make_text_bigger.dart';
+import 'package:hello_world/screen/first_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,16 +15,16 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Hello World'),
-          backgroundColor: Colors.blue,
-        ),
-        body: const Center(
-          // child: Headings(text: 'Hello World'),
-          child: MakeTextBigger(text: 'Hello World'),
-        ),
-      )
+      // home: Scaffold(
+      //   appBar: AppBar(
+      //     title: const Text('Hello World'),
+      //     backgroundColor: Colors.blue,
+      //   ),
+      //   body: const Center(
+      //     // child: Headings(text: 'Hello World'),
+      //     child: MakeTextBigger(text: 'Hello World'),
+      //   ),
+      home: const FirstScreen(),
     );
   }
 }
