@@ -25,6 +25,12 @@ class MyApp extends StatelessWidget {
       //     child: MakeTextBigger(text: 'Hello World'),
       //   ),
       home: const FirstScreen(),
+      // using widget padding
+      // home: const Padding(
+      //   padding: EdgeInsets.all(30),
+      //   child: Text('this is padding'),
+      // )
+      // ,
     );
   }
 }
