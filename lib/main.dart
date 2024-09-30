@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world/screen/first_screen.dart';
+import 'package:hello_world/screen/second_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,7 +24,8 @@ class MyApp extends StatelessWidget {
       //     // child: Headings(text: 'Hello World'),
       //     child: MakeTextBigger(text: 'Hello World'),
       //   ),
-      home: const FirstScreen(),
+      // home: const FirstScreen(), // first screen
+      home: const SecondScreen(),
       // using widget padding
       // home: const Padding(
       //   padding: EdgeInsets.all(30),
