@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world/screen/input_screen.dart';
-import 'package:hello_world/screen/switch_screen.dart';
+import 'package:hello_world/screen/check_box_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,7 +25,7 @@ class MyApp extends StatelessWidget {
       //     child: MakeTextBigger(text: 'Hello World'),
       //   ),
       // home: const FirstScreen(), // first screen
-      home: const SwitchScreen(),
+      home: const CheckBoxScreen(),
       // using widget padding
       // home: const Padding(
       //   padding: EdgeInsets.all(30),
