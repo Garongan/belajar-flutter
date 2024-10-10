@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world/screen/check_box_screen.dart';
+import 'package:hello_world/screen/font_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        fontFamily: 'Oswald',
       ),
       // home: Scaffold(
       //   appBar: AppBar(
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
       //     child: MakeTextBigger(text: 'Hello World'),
       //   ),
       // home: const FirstScreen(), // first screen
-      home: const CheckBoxScreen(),
+      home: const FontScreen(),
       // using widget padding
       // home: const Padding(
       //   padding: EdgeInsets.all(30),
