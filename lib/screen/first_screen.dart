@@ -8,6 +8,9 @@ class FirstScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size screenSize = MediaQuery.of(context).size;
+    Orientation orientation = MediaQuery.of(context).orientation;
+
     return Scaffold(
       appBar: AppBar(
         title: const Text(
@@ -67,6 +70,21 @@ class FirstScreen extends StatelessWidget {
                             )));
               },
               child: const Text('go to second screen'),
+            ),
+            Text(
+              'Screen width: ${screenSize.width.toStringAsFixed(2)}',
+              style: const TextStyle(color: Colors.black, fontSize: 18),
+              textAlign: TextAlign.center,
+            ),
+            Text(
+              'Screen width: ${screenSize.height.toStringAsFixed(2)}',
+              style: const TextStyle(color: Colors.black, fontSize: 18),
+              textAlign: TextAlign.center,
+            ),
+            Text(
+              'Orientation: $orientation',
+              style: const TextStyle(color: Colors.black, fontSize: 18),
+              textAlign: TextAlign.center,
             ),
           ],
         ),
