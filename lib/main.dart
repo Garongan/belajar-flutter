@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world/screen/font_screen.dart';
+import 'package:hello_world/screen/scrolling_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
       //     child: MakeTextBigger(text: 'Hello World'),
       //   ),
       // home: const FirstScreen(), // first screen
-      home: const FontScreen(),
+      home: const ScrollingScreen(),
       // using widget padding
       // home: const Padding(
       //   padding: EdgeInsets.all(30),
