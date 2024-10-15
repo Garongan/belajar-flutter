@@ -1,8 +1,15 @@
+import 'package:device_preview/device_preview.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:hello_world/screen/first_screen.dart';
+import 'package:hello_world/screen/responsive_screen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    DevicePreview(
+      enabled: !kReleaseMode,
+      builder: (context) => const MyApp(), // Wrap your app
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -26,7 +33,7 @@ class MyApp extends StatelessWidget {
       //     child: MakeTextBigger(text: 'Hello World'),
       //   ),
       // home: const FirstScreen(), // first screen
-      home: const FirstScreen(),
+      home: const ResponsiveScreen(),
       // using widget padding
       // home: const Padding(
       //   padding: EdgeInsets.all(30),
